@@ -1,0 +1,29 @@
+{
+  "auditoria": {
+    "umbral_min_caracteres_pagina": 80,
+    "umbral_min_densidad_chars_sq_in": 1.2,
+    "verificar_duplicados_sha256": true,
+    "extraer_metadatos_iso": true,
+    "ignorar_archivos_ocultos": true,
+    "extensiones_permitidas": [".pdf"]
+  },
+  "rutas": {
+    "directorio_origen_defecto": "./documentos",
+    "archivo_salida_excel": "reporte_auditoria_ocr.xlsx",
+    "archivo_salida_pdf": "reporte_auditoria_consolidado.pdf",
+    "archivo_log": "auditoria_ocr_log.log"
+  },
+  "google_drive": {
+    "usar_cuenta_servicio": true,
+    "ruta_credenciales_json": "service_account.json",
+    "folder_id_objetivo": "",
+    "max_descargas_simultaneas": 50
+  },
+  "clasificaciones_estado": {
+    "CONFORME_OCR": "Cumple los estándares de densidad textual y legibilidad.",
+    "REQUIERE_OCR_TOTAL": "Documento escaneado que solo contiene imágenes sin capa OCR.",
+    "REQUIERE_OCR_PARCIAL": "Documento mixto con páginas huérfanas o densidad baja.",
+    "BLOQUEADO_ENCRIPTADO": "Archivo protegido con contraseña no accesible.",
+    "ERROR_CORRUPTO": "Estructura PDF corrupta o encabezado inválido."
+  }
+}

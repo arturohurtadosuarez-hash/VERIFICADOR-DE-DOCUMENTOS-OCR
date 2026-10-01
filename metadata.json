@@ -1,0 +1,6 @@
+{
+  "name": "AuditOCR - Auditoría e Inspección de PDFs",
+  "description": "Suite de auditoría e inspección técnica de capa OCR en documentos PDF con cálculo de densidad textual, detección de páginas escaneadas sin OCR, metadatos y exportación ejecutiva.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

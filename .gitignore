@@ -1,0 +1,28 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# Local generated reports
+reporte_*.xlsx
+reporte_*.pdf
+Dictamen_*.pdf
+Auditoria_*.xlsx
+
